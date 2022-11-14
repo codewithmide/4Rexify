@@ -21,11 +21,11 @@
         overflow-x: hidden;
     }
 
-    .slider-container {
+    /** .slider-container {
         overflow-x: hidden;
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .slider {
@@ -56,9 +56,9 @@
     #six,
     #seven {
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-    }
+    } **/
 
 </style>
 
@@ -115,30 +115,30 @@
 
 
     <div class="w-full h-[90vh] flex items-center justify-center" id="about">
-        <div class="w-[80%] h-[60%] flex flex-col items-center justify-between">
-            <div class="text-left w-full h-[20%]">
+        <div class="w-[80%] h-[80%] flex flex-col items-center justify-between">
+            <div class="text-left w-full h-[15%]">
                 <h1 class="font-Serif text-blue font-bold text-big text-left">
                     About 4Rexify
                 </h1>
             </div>
 
-            <div class="w-full h-[70%] flex items-center justify-center">
-                <div class="w-1/2 h-full flex items-center justify-center">
+            <div class="w-full h-[80%] flex items-center justify-center">
+                <div class="w-1/2 h-full flex flex-col gap-6 items-center justify-center">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sint qui ea reiciendis eveniet amet. Incidunt dicta quam sit illum quod mollitia, molestias fugit delectus architecto, ad cumque, ex dolore. Quisquam repellat tenetur voluptatem minus cumque rem hic commodi ratione ipsum similique dolores, totam omnis natus alias cupiditate. Quas nesciunt voluptates veritatis ex exercitationem accusantium recusandae? Obcaecati nisi nostrum quos nihil officia qui vel quis laborum odio ut, aut perferendis facilis quod ducimus architecto quibusdam atque nesciunt tempora excepturi culpa pariatur dolore illum. Aliquid, quaerat, aperiam sit libero beatae nemo veniam officiis labore itaque cupiditate consequuntur sed tenetur sapiente voluptas.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sint qui ea reiciendis eveniet amet. Incidunt dicta quam sit illum quod mollitia, molestias fugit delectus architecto, ad cumque, ex dolore. Quisquam repellat tenetur voluptatem minus cumque rem hic commodi ratione ipsum similique dolores, totam omnis natus alias cupiditate. Quas 
+                    </p>
+
+                    <p>
+                        nesciunt voluptates veritatis ex exercitationem accusantium recusandae? Obcaecati nisi nostrum quos nihil officia qui vel quis laborum odio ut, aut perferendis facilis quod ducimus architecto quibusdam atque nesciunt tempora excepturi culpa pariatur dolore illum. Aliquid, quaerat, aperiam sit libero beatae nemo veniam officiis labore itaque cupiditate consequuntur sed tenetur sapiente voluptas.
                     </p>
                 </div>
 
-                <div class="slider-section w-1/2 h-full flex items-center justify-center">
-                    <div class="slider-container w-full h-full flex items-center justify-center">
-
-                        <div class="slider w-full h-full" id="five"></div>
-
-                        <div class="slider w-full h-full" id="six"></div>
-
-                        <div class="slider w-full h-full" id="seven"></div>
-
+                <div class="w-1/2 h-full flex items-center justify-center">
+                    
+                    <div class="w-full h-full flex items-center justify-center">
+                        <img src="./src/images/currencies.gif" alt="currencies" class="object-contain">
                     </div>
+
                 </div>
                 
             </div>
