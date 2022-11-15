@@ -565,14 +565,6 @@ video {
   height: 70%;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-\[80\%\] {
-  height: 80%;
-}
-
 .w-\[100vw\] {
   width: 100vw;
 }
