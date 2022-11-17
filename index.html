@@ -24,105 +24,119 @@
         scroll-behavior: smooth;
     }
 
+    .hero {
+        background-image: url(./src/images/money-chair.png), url(./src/images/phone.png);
+        background-position: left bottom, right top;
+        background-repeat: no-repeat;
+    }
+    
     .form-control {
-	position: relative;
-}
-
-.form-control small {
-	color: hsl(0, 100%, 74%);
-	font-weight: 600;
-	position: absolute;
-	bottom: -24px;
-	right: 0;
-	opacity: 0;
-	text-align: right;
-}
-
-.form-control.error input {
-	border-color: hsl(0, 100%, 74%);
-	color: hsl(0, 100%, 74%);
-}
-
-.form-control.error input::placeholder {
-	color: hsl(0, 100%, 74%);
-}
-
-input:focus {
-	border: 1.3px solid hsl(248, 32%, 49%);
-	outline: none;
-}
-
-.form-control img {
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	right: 15px;
-	transform: translateY(-50%);
-	height: 20px;
-}
-
-.form-control.error img {
-	opacity: 1;
-}
-
-.form-control small {
-	opacity: 0;
-}
-
-.form-control.error small {
-	opacity: 1;
-}
-
-small {
-	display: block;
-	color: #bbb;
-	margin-top: 15px;
-}
+        position: relative;
+        margin-bottom: 1.7rem;
+    }
+    
+    .form-control small {
+        color: hsl(0, 100%, 74%);
+        position: absolute;
+        bottom: -24px;
+        right: 0;
+        opacity: 0;
+        text-align: right;
+    }
+    
+    input {
+        display: block;
+        width: 100%;
+    }
+    
+    .form-control.error input {
+        border-color: hsl(0, 100%, 74%);
+        color: hsl(0, 100%, 74%);
+    }
+    
+    .form-control.error input::placeholder {
+        color: hsl(0, 100%, 74%);
+    }
+    
+    .form-control img {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        height: 20px;
+    }
+    
+    .form-control.error img {
+        opacity: 1;
+    }
+    
+    button:active {
+        transform: translateY(2px);
+    }
+    
+    .form-control small {
+        opacity: 0;
+    }
+    
+    .form-control.error small {
+        opacity: 1;
+    }
+    
+    small {
+        display: block;
+        color: #bbb;
+        font-size: 11px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    
 
 </style>
 
 <body class="bg-darkSienna">
-    <div class="h-[100vh] w-[100vw] p-0 m-0 flex flex-col items-center justify-center bg-darkSienna">
 
-        <header class="w-full h-[10%] flex items-center justify-center">
+    <header class="w-full h-[3rem] pt-4 flex items-center justify-center">
 
-            <nav class="w-[90%] flex items-center justify-between">
+        <nav class="w-[90%] h-auto flex items-center justify-between">
 
-                <div class="w-[11%] h-full cursor-pointer">
-                    <img src="./src/images/4Rexify-removebg.png" alt="logo">
-                </div>
+            <div class="w-[11%] h-full cursor-pointer">
+                <img src="./src/images/4Rexify-removebg.png" alt="logo">
+            </div>
 
-                <div class="flex gap-6 items-center justify-center">
+            <div class="flex gap-6 items-center justify-center">
 
-                    <ul class="flex items-center gap-6 text-white font-Montserrat font-normal">
-                        <li class="hover:text-orange cursor-pointer focus:text-orange">
-                            <a href="#about" class="capitalize">
-                                How it works?
-                            </a>
-                        </li>
-                        <li class="hover:text-orange cursor-pointer">
-                            <a href="#blogs">
-                                Blogs
-                            </a>
-                        </li>
-                        <li class="hover:text-orange cursor-pointer">
-                            Contact Us
-                        </li>
-                    </ul>
-                    
-                    <a href="#convert">
-                        <button type="button" class="font-Montserrat font-normal text-center focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-6 py-2.5 m-auto">
-                            Get Started
-                        </button>
-                    </a>
+                <ul class="flex items-center gap-6 text-white font-Montserrat font-normal">
+                    <li class="hover:text-orange cursor-pointer focus:text-orange">
+                        <a href="#about" class="capitalize">
+                            How it works?
+                        </a>
+                    </li>
+                    <li class="hover:text-orange cursor-pointer">
+                        <a href="#blogs">
+                            Blogs
+                        </a>
+                    </li>
+                    <li class="hover:text-orange cursor-pointer">
+                        Contact Us
+                    </li>
+                </ul>
+                
+                <a href="#convert">
+                    <button type="button" class="font-Montserrat font-normal text-center focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-6 py-2.5 m-auto">
+                        Get Started
+                    </button>
+                </a>
 
-                </div>
+            </div>
 
-            </nav>
+        </nav>
 
-        </header>
+    </header>
 
-        <div class="w-[90%] h-[90%] flex flex-col justify-center items-center">
+    <div class="h-[90vh] w-full p-0 m-0 flex flex-col items-center justify-center bg-darkSienna">
+
+        <div class="w-[90%] h-[90%] flex flex-col justify-center items-center hero">
             <h1 class="font-Serif text-white font-bold text-big">
                 Foreign Exchange Rate
             </h1>
@@ -582,39 +596,46 @@ small {
                 </h1>
             </div>
     
-            <div class="h-[70%] flex items-center justify-between">
-                <div class="flex items-center justify-center w-[30%]">
+            <div class="h-[80%] flex items-center justify-between">
+                <div class="flex items-center justify-center w-[40%]">
                     <img src="./src/images/contact.png" alt="contact">
                 </div>
 
-                <div class="w-[70%] flex items-center justify-center">
+                <div class="w-[50%] flex items-center justify-center">
                     
-                    <form method="get" id="form" class="flex flex-col items-center gap-3">
-						<div class="form-control w-2/3">
-							<input type="text" id="firstname" placeholder="First Name" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded"/>
+                    <form id="form" class="w-full flex flex-col items-center" action="mailto:codewithmide@gmail.com"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    name="EmailForm">
+						<div class="form-control w-full">
+							<input type="text" id="firstname" placeholder="First Name" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded" />
 							<img src="./src/images/icon-error.svg" alt="error-icon" />
 							<small></small>
 						</div>
-						<div class="form-control w-2/3">
-							<input type="text" id="lastname" placeholder="Last Name" class="w-full h-[3rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded" />
+						<div class="form-control w-full">
+							<input type="text" id="lastname" placeholder="Last Name" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded"/>
 							<img src="./src/images/icon-error.svg" alt="error-icon" />
 							<small></small>
 						</div>
-						<div class="form-contro w-2/3">
-							<input type="email" id="email" placeholder="Email Address" class="w-full h-[3rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded" />
+						<div class="form-control w-full">
+							<input type="email" id="email" placeholder="Email Address" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded"/>
 							<img src="./src/images/icon-error.svg" alt="error-icon" />
 							<small></small>
 						</div>
-                        <div class="w-2/3">
+                        <div class="form-control w-full">
+							<input type="text" id="subject" placeholder="Subject" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded" />
+							<img src="./src/images/icon-error.svg" alt="error-icon" />
+							<small></small>
+						</div>
+                        <div class="w-full">
                             <textarea name="message" id="message" placeholder="Enter your message" cols="70" rows="5" class="w-full font-Montserrat font-bold text-small cursor-pointer pl-4 pt-4 rounded"></textarea>
                         </div>
-
-                        <div class="w-2/3 flex items-start">
-                            <button class="font-Montserrat tracking-widest text-center font-normal focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-8 py-3.5  hover:scale-105">
+                        <a href="./index.html">
+                            <button class="font-Montserrat tracking-widest text-center font-normal focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-10 py-3.5  hover:scale-105" type="submit" value="Submit">
                                 Send
                             </button>
-                        </div>
-
+                        </a>
+                        
 					</form>
 
                 </div>
