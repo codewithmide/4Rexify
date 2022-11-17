@@ -23,10 +23,66 @@
     html {
         scroll-behavior: smooth;
     }
+
+    .form-control {
+	position: relative;
+}
+
+.form-control small {
+	color: hsl(0, 100%, 74%);
+	font-weight: 600;
+	position: absolute;
+	bottom: -24px;
+	right: 0;
+	opacity: 0;
+	text-align: right;
+}
+
+.form-control.error input {
+	border-color: hsl(0, 100%, 74%);
+	color: hsl(0, 100%, 74%);
+}
+
+.form-control.error input::placeholder {
+	color: hsl(0, 100%, 74%);
+}
+
+input:focus {
+	border: 1.3px solid hsl(248, 32%, 49%);
+	outline: none;
+}
+
+.form-control img {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	height: 20px;
+}
+
+.form-control.error img {
+	opacity: 1;
+}
+
+.form-control small {
+	opacity: 0;
+}
+
+.form-control.error small {
+	opacity: 1;
+}
+
+small {
+	display: block;
+	color: #bbb;
+	margin-top: 15px;
+}
+
 </style>
 
-<body>
-    <div class="h-[100vh] w-[100vw] p-0 m-0 flex flex-col items-center justify-center bg-blue">
+<body class="bg-darkSienna">
+    <div class="h-[100vh] w-[100vw] p-0 m-0 flex flex-col items-center justify-center bg-darkSienna">
 
         <header class="w-full h-[10%] flex items-center justify-center">
 
@@ -89,7 +145,7 @@
 
                     <div class="flex items-center justify-center">
 
-                        <h1 class="font-Serif text-blue w-full font-bold text-big text-left leading-none my-auto">
+                        <h1 class="font-Serif text-orange w-full font-bold text-big text-left leading-none my-auto">
                             How it works?
                         </h1>
 
@@ -97,7 +153,7 @@
 
                     <div>
 
-                        <p class="font-Montserrat">
+                        <p class="font-Montserrat text-white">
                             nesciunt voluptates veritatis ex exercitationem accusantium recusandae? Obcaecati nisi nostrum quos nihil officia qui vel quis laborum odio ut, aut perferendis facilis quod ducimus architecto quibusdam atque nesciunt tempora excepturi culpa pariatur dolore illum. Aliquid, quaerat, aperiam sit libero beatae nemo veniam officiis labore itaque cupiditate consequuntur sed tenetur sapiente voluptas.
                         </p>
 
@@ -117,10 +173,8 @@
                 </div>
 
                 <div class="w-1/2 h-full flex items-center justify-center">
-                    
-                    <div class="w-full h-full flex items-center justify-center">
-                        <img src="./src/images/currencies.gif" alt="currencies" class="object-contain">
-                    </div>
+                
+                    <img src="./src/images/cards.png" alt="currencies" class="object-contain">
 
                 </div>
                 
@@ -128,12 +182,12 @@
         </div>
     </div>
 
-    <div id="convert" class="w-full h-[100vh] flex flex-col items-center justify-center bg-blue">
+    <div id="convert" class="w-full h-[100vh] flex flex-col items-center justify-center">
 
 
         <div class="w-[80%] h-full flex m-auto flex-col">
 
-            <div class="w-full flex flex mt-24 mb-6">
+            <div class="w-full flex f mt-24 mb-6">
                 <h2 class="text-orange font-Serif font-bold text-big">
                     Make your conversion
                 </h2>
@@ -495,14 +549,21 @@
                         <option value="YER">YER - Yemeni Rial</option>
                         <option value="ZMK">ZMK - Zambian Kwacha</option>
                     </select>
-                </div>                
+                </div>
+                
+                <div class="w-[45%]">
+                    <h3 class="font-bold font-Montserrat text-white mb-3">
+                        Enter a value
+                    </h3>
+                    <input readonly type="number" name="number" placeholder="0" id="number" class="w-full h-[3rem] font-Montserrat font-bold text-small rounded pl-4 cursor-not-allowed outline-none">
+                </div>
 
             </div>
 
             <div class="mt-10">
 
                 <a href="#value">
-                    <button type="button" class="font-Montserrat tracking-widest font-normal text-center text-white font-normal focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-4 py-3.5 w-1/6 hover:scale-105">
+                    <button type="button" class="font-Montserrat tracking-widest text-center font-normal focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-4 py-3.5 w-1/6 hover:scale-105">
                         Convert
                     </button>
                 </a>
@@ -513,11 +574,72 @@
 
     </div>
 
-    <div class="h-[100vh] w-full flex item-center justify-center" id="value">
-        <canvas id="chart" class="w-full h-full">
+    <div class="flex w-[100%] h-[100vh] items-center justify-center" id="contact">
+        <div class="w-[80%] h-full flex flex-col">
+            <div>
+                <h1 class="font-bold text-orange font-Serif text-big">
+                    Contact us
+                </h1>
+            </div>
+    
+            <div class="h-[70%] flex items-center justify-between">
+                <div class="flex items-center justify-center w-[30%]">
+                    <img src="./src/images/contact.png" alt="contact">
+                </div>
 
-        </canvas>
+                <div class="w-[70%] flex items-center justify-center">
+                    
+                    <form method="get" id="form" class="flex flex-col items-center gap-3">
+						<div class="form-control w-2/3">
+							<input type="text" id="firstname" placeholder="First Name" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded"/>
+							<img src="./src/images/icon-error.svg" alt="error-icon" />
+							<small></small>
+						</div>
+						<div class="form-control w-2/3">
+							<input type="text" id="lastname" placeholder="Last Name" class="w-full h-[3rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded" />
+							<img src="./src/images/icon-error.svg" alt="error-icon" />
+							<small></small>
+						</div>
+						<div class="form-contro w-2/3">
+							<input type="email" id="email" placeholder="Email Address" class="w-full h-[3rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded" />
+							<img src="./src/images/icon-error.svg" alt="error-icon" />
+							<small></small>
+						</div>
+                        <div class="w-2/3">
+                            <textarea name="message" id="message" placeholder="Enter your message" cols="70" rows="5" class="w-full font-Montserrat font-bold text-small cursor-pointer pl-4 pt-4 rounded"></textarea>
+                        </div>
+
+                        <div class="w-2/3 flex items-start">
+                            <button class="font-Montserrat tracking-widest text-center font-normal focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-8 py-3.5  hover:scale-105">
+                                Send
+                            </button>
+                        </div>
+
+					</form>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer class="p-4 bg-white rounded shadow md:flex md:items-center md:justify-between md:p-6">
+        <span class="text-small text-darkSienna sm:text-center">© 2022 <a href="index.html" target="_blank">4Rexify™</a> All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+            <li>
+                <a href="#about" class="mr-4 text-small text-darkSienna md:mr-6">How it works</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 text-small text-darkSienna md:mr-6">Convert</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 text-small text-darkSienna md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="text-small text-darkSienna">Contact</a>
+            </li>
+        </ul>
+    </footer>
 
 
     <script src="./src/script.js"></script>

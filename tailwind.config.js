@@ -3,10 +3,8 @@ module.exports = {
   content: ["index.html", "./src/script.js"],
   theme: {
     colors: {
-      'grey': '#e5e5e5',
-      'orange': '#fca311',
-      'blue': '#14213d',
-      'black': '#000000',
+      'orange': '#F6AA1C',
+      'darkSienna': '#220901',
       'white': '#ffffff',
     },
     fontWeight: {
