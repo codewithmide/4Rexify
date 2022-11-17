@@ -25,8 +25,8 @@
     }
 
     .hero {
-        background-image: url(./src/images/money-chair.png), url(./src/images/phone.png);
-        background-position: left bottom, right top;
+        background-image: url(./src/images/money-chair.png);
+        background-position: left bottom;
         background-repeat: no-repeat;
     }
     
@@ -96,7 +96,7 @@
 
 <body class="bg-darkSienna">
 
-    <header class="w-full h-[3rem] pt-4 flex items-center justify-center">
+    <header class="w-full h-[3rem] pt-6 mb-10 flex items-center justify-center">
 
         <nav class="w-[90%] h-auto flex items-center justify-between">
 
@@ -134,7 +134,7 @@
 
     </header>
 
-    <div class="h-[90vh] w-full p-0 m-0 flex flex-col items-center justify-center bg-darkSienna">
+    <div class="h-[90vh] w-full p-0 m-0 flex flex-col items-center justify-center bg-darkSienna" style="background: url(./src/images/phone.png) right top no-repeat;">
 
         <div class="w-[90%] h-[90%] flex flex-col justify-center items-center hero">
             <h1 class="font-Serif text-white font-bold text-big">
@@ -630,12 +630,12 @@
                         <div class="w-full">
                             <textarea name="message" id="message" placeholder="Enter your message" cols="70" rows="5" class="w-full font-Montserrat font-bold text-small cursor-pointer pl-4 pt-4 rounded"></textarea>
                         </div>
-                        <a href="./index.html">
+	
+						<div class="w-full flex items-start mt-4">
                             <button class="font-Montserrat tracking-widest text-center font-normal focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg px-10 py-3.5  hover:scale-105" type="submit" value="Submit">
                                 Send
                             </button>
-                        </a>
-                        
+                        </div>
 					</form>
 
                 </div>
@@ -655,9 +655,6 @@
             </li>
             <li>
                 <a href="#" class="mr-4 text-small text-darkSienna md:mr-6">Licensing</a>
-            </li>
-            <li>
-                <a href="#" class="text-small text-darkSienna">Contact</a>
             </li>
         </ul>
     </footer>
