@@ -945,6 +945,10 @@ video {
     margin-bottom: 2.5rem;
   }
 
+  .sm\:mb-64 {
+    margin-bottom: 16rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
