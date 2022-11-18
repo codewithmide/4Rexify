@@ -945,6 +945,22 @@ video {
     height: 110vh;
   }
 
+  .sm\:h-\[\] {
+    height: ;
+  }
+
+  .sm\:h-\[70\] {
+    height: 70;
+  }
+
+  .sm\:h-\[90\] {
+    height: 90;
+  }
+
+  .sm\:h-\[90\%\] {
+    height: 90%;
+  }
+
   .sm\:w-\[30\%\] {
     width: 30%;
   }
@@ -1013,6 +1029,10 @@ video {
 
   .md\:h-\[70vh\] {
     height: 70vh;
+  }
+
+  .md\:h-\[80\%\] {
+    height: 80%;
   }
 
   .md\:w-\[15\%\] {
