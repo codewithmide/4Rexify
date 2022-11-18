@@ -841,6 +841,10 @@ video {
   color: rgb(34 9 1 / var(--tw-text-opacity));
 }
 
+.bg-blend-normal {
+  background-blend-mode: normal;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -935,6 +939,10 @@ video {
 
   .sm\:h-\[120vh\] {
     height: 120vh;
+  }
+
+  .sm\:h-\[110vh\] {
+    height: 110vh;
   }
 
   .sm\:w-\[30\%\] {
