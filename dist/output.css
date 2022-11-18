@@ -993,6 +993,10 @@ video {
     height: 80%;
   }
 
+  .sm\:h-\[105vh\] {
+    height: 105vh;
+  }
+
   .sm\:w-\[30\%\] {
     width: 30%;
   }
