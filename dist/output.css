@@ -605,6 +605,22 @@ video {
   height: 100%;
 }
 
+.h-\[8-\%\] {
+  height: 8-%;
+}
+
+.h-\[0\%\] {
+  height: 0%;
+}
+
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
 .w-full {
   width: 100%;
 }
@@ -825,10 +841,6 @@ video {
   color: rgb(34 9 1 / var(--tw-text-opacity));
 }
 
-.bg-blend-normal {
-  background-blend-mode: normal;
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -877,6 +889,22 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:mt-\[0rem\] {
+    margin-top: 0rem;
+  }
+
+  .sm\:mt-\[5rem\] {
+    margin-top: 5rem;
+  }
+
+  .sm\:mt-\[rem\] {
+    margin-top: rem;
+  }
+
+  .sm\:mt-\[1rem\] {
+    margin-top: 1rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -889,6 +917,26 @@ video {
     height: 100vh;
   }
 
+  .sm\:h-\[60vh\] {
+    height: 60vh;
+  }
+
+  .sm\:h-\[70vh\] {
+    height: 70vh;
+  }
+
+  .sm\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .sm\:h-\[85vh\] {
+    height: 85vh;
+  }
+
+  .sm\:h-\[120vh\] {
+    height: 120vh;
+  }
+
   .sm\:w-\[30\%\] {
     width: 30%;
   }
@@ -897,8 +945,32 @@ video {
     width: 100%;
   }
 
+  .sm\:w-\[95\%\] {
+    width: 95%;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .sm\:w-\[85\%\] {
+    width: 85%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:text-center {
     text-align: center;
+  }
+
+  .sm\:text-semiBig {
+    font-size: 2.5rem;
   }
 }
 
@@ -927,6 +999,14 @@ video {
     height: 60vh;
   }
 
+  .md\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .md\:h-\[70vh\] {
+    height: 70vh;
+  }
+
   .md\:w-\[15\%\] {
     width: 15%;
   }
@@ -937,6 +1017,14 @@ video {
 
   .md\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:items-center {
@@ -991,6 +1079,10 @@ video {
     display: flex;
   }
 
+  .lg\:h-\[60vh\] {
+    height: 60vh;
+  }
+
   .lg\:w-\[11\%\] {
     width: 11%;
   }
@@ -1030,6 +1122,10 @@ video {
 @media (min-width: 1024px) {
   .xl\:h-\[90vh\] {
     height: 90vh;
+  }
+
+  .xl\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .xl\:text-big {
