@@ -593,32 +593,16 @@ video {
   height: 90%;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.h-\[10\%\] {
+  height: 10%;
 }
 
 .h-\[80\%\] {
   height: 80%;
 }
 
-.h-\[100\%\] {
-  height: 100%;
-}
-
-.h-\[8-\%\] {
-  height: 8-%;
-}
-
-.h-\[0\%\] {
-  height: 0%;
-}
-
-.h-\[10\%\] {
-  height: 10%;
-}
-
-.h-\[\] {
-  height: ;
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-full {
@@ -631,10 +615,6 @@ video {
 
 .w-\[80\%\] {
   width: 80%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-\[45\%\] {
@@ -699,6 +679,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .rounded-lg {
@@ -841,10 +825,6 @@ video {
   color: rgb(34 9 1 / var(--tw-text-opacity));
 }
 
-.bg-blend-normal {
-  background-blend-mode: normal;
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -889,92 +869,48 @@ video {
 }
 
 @media (min-width: 320px) {
-  .sm\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .sm\:mt-\[0rem\] {
-    margin-top: 0rem;
+  .sm\:mt-\[1rem\] {
+    margin-top: 1rem;
   }
 
   .sm\:mt-\[5rem\] {
     margin-top: 5rem;
   }
 
-  .sm\:mt-\[rem\] {
-    margin-top: rem;
+  .sm\:mt-0 {
+    margin-top: 0px;
   }
 
-  .sm\:mt-\[1rem\] {
-    margin-top: 1rem;
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
   }
 
-  .sm\:flex {
-    display: flex;
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .sm\:hidden {
     display: none;
   }
 
-  .sm\:h-\[100vh\] {
-    height: 100vh;
-  }
-
-  .sm\:h-\[60vh\] {
-    height: 60vh;
-  }
-
-  .sm\:h-\[70vh\] {
-    height: 70vh;
-  }
-
   .sm\:h-\[80vh\] {
     height: 80vh;
-  }
-
-  .sm\:h-\[85vh\] {
-    height: 85vh;
-  }
-
-  .sm\:h-\[120vh\] {
-    height: 120vh;
   }
 
   .sm\:h-\[110vh\] {
     height: 110vh;
   }
 
-  .sm\:h-\[\] {
-    height: ;
-  }
-
-  .sm\:h-\[70\] {
-    height: 70;
+  .sm\:h-\[90\%\] {
+    height: 90%;
   }
 
   .sm\:h-\[90\] {
     height: 90;
   }
 
-  .sm\:h-\[90\%\] {
-    height: 90%;
-  }
-
   .sm\:w-\[30\%\] {
     width: 30%;
-  }
-
-  .sm\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .sm\:w-\[95\%\] {
-    width: 95%;
-  }
-
-  .sm\:w-\[80\%\] {
-    width: 80%;
   }
 
   .sm\:w-\[85\%\] {
@@ -989,12 +925,44 @@ video {
     flex-direction: column;
   }
 
+  .sm\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .sm\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
 
   .sm\:text-semiBig {
     font-size: 2.5rem;
+  }
+
+  .sm\:text-small {
+    font-size: 0.8rem;
+  }
+
+  .sm\:text-normal {
+    font-size: 1rem;
   }
 }
 
@@ -1015,16 +983,28 @@ video {
     margin-right: 1.5rem;
   }
 
+  .md\:mt-\[2rem\] {
+    margin-top: 2rem;
+  }
+
+  .md\:mt-\[rem\] {
+    margin-top: rem;
+  }
+
+  .md\:mt-\[0rem\] {
+    margin-top: 0rem;
+  }
+
+  .md\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:h-\[60vh\] {
     height: 60vh;
-  }
-
-  .md\:h-\[80vh\] {
-    height: 80vh;
   }
 
   .md\:h-\[70vh\] {
@@ -1043,12 +1023,16 @@ video {
     width: 90%;
   }
 
-  .md\:w-\[80\%\] {
-    width: 80%;
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-\[80\%\] {
+    width: 80%;
   }
 
   .md\:flex-row {
@@ -1081,12 +1065,35 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .md\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
   .md\:text-small {
     font-size: 0.8rem;
   }
 
   .md\:text-semiBig {
     font-size: 2.5rem;
+  }
+
+  .md\:text-medium {
+    font-size: 1.6rem;
   }
 }
 
@@ -1158,5 +1165,9 @@ video {
 
   .xl\:text-big {
     font-size: 4.5rem;
+  }
+
+  .xl\:text-medium {
+    font-size: 1.6rem;
   }
 }
