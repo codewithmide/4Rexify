@@ -1037,6 +1037,10 @@ video {
     width: 50%;
   }
 
+  .sm\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
