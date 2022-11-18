@@ -1045,6 +1045,10 @@ video {
     width: 40%;
   }
 
+  .sm\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -1193,6 +1197,14 @@ video {
 
   .md\:w-1\/6 {
     width: 16.666667%;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:flex-row {
