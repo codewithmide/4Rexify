@@ -45,13 +45,6 @@
         text-align: right;
     }
     
-    input {
-        display: block;
-        width: 100%;
-        /* outline-style: solid;
-        outline-color: #F6AA1C; */
-    }
-    
     .form-control.error input {
         border-color: hsl(0, 100%, 74%);
         color: hsl(0, 100%, 74%);
@@ -94,7 +87,10 @@
         margin-top: 15px;
     }
     
-
+    #btn-back-to-top {
+        position: fixed;
+        display: none;
+    }
 </style>
 
 <body class="bg-darkSienna">
@@ -102,15 +98,15 @@
 
         <nav class="w-[90%] h-auto flex items-center mt-5 justify-between">
 
-            <div class="sm:w-[30%] lg:w-[11%] md:w-[15%] h-full cursor-pointer">
+            <div class="sm:w-[25%] lg:w-[11%] md:w-[15%] h-full cursor-pointer">
                 <a href="index.html">
                     <img src="./src/images/4Rexify-removebg.png" alt="logo" class="object-contain">
                 </a>
             </div>
 
-            <div class="flex md:gap-3 lg:gap-6 items-center justify-center">
+            <div class=" sm:hidden md:flex md:gap-3 lg:gap-6 items-center justify-center">
 
-                <ul class="sm:hidden md:flex items-center lg:gap-6 md:gap-3 text-white font-Montserrat">
+                <ul class="md:flex items-center lg:gap-6 md:gap-3 text-white font-Montserrat">
                     <li class="hover:text-orange cursor-pointer focus:text-orange">
                         <a href="#about" class="lg:text-normal md:text-small">
                             How it works?
@@ -136,9 +132,47 @@
 
             </div>
 
+            <div class="md:hidden mobile-action-menu mr-6">
+                <div class="mobile-action-menu">
+                    <div class="menu">
+                      <img src="./src/images/icon-hamburger.svg" alt="icon-hamburger" />
+                    </div>
+                    <div class="close hidden">
+                      <img src="./src/images/icon-close-menu.svg" alt="icon-close-menu">
+                    </div>
+                </div>
+            </div>
+
         </nav>
 
     </header>
+
+    <div class="w-screen h-[55%] bg-darkSienna absolute z-10 md:hidden flex items-center mobile-nav-links sm:hidden">
+        <div class="flex flex-col items-center ml-10">
+            <ul class="text-white font-Montserrat justify-between gap-6 flex flex-col">
+                <li class="hover:text-orange cursor-pointer focus:text-orange">
+                    <a href="#about">
+                        How it works?
+                    </a>
+                </li>
+                <li class="hover:text-orange cursor-pointer">
+                    <a href="#blogs">
+                        Blogs
+                    </a>
+                </li>
+                <li class="hover:text-orange cursor-pointer">
+                    <a href="#contact">
+                        Contact Us
+                    </a>
+                </li>
+                <a href="#convert">
+                    <button type="button" class="font-Montserrat font-normal text-center focus:outline-none text-white bg-orange focus:ring-2 focus:ring-white font-medium rounded-lg md:text-small m-auto px-5 py-3">
+                        Get Started
+                    </button>
+                </a>
+            </ul>
+        </div>
+    </div>
 
     <div class="xl:h-[90vh] md:h-[70vh] lg:h-[60vh] sm:h-[90vh] md:mt-[0rem] sm:mt-[1rem] lg:mt-[1rem] w-full p-0 m-0 flex flex-col items-center justify-center bg-darkSienna">
 
@@ -155,6 +189,12 @@
         </div>
 
     </div>
+
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-red-600 text-white bg-orange font-medium text-xs leading-tight uppercase rounded-full shadow-md transition duration-150 ease-in-out bottom-5 right-5 z-10" id="btn-back-to-top">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+        </svg>
+    </button>
     
     <div class="w-full xl:h-[100vh] md:h-[70vh] lg:h-[60vh] sm:h-[105vh] flex items-center justify-center" id="about">
         <div class="w-[80%] md:h-[80%] sm:h-[100%] flex flex-col justify-between">
@@ -633,7 +673,7 @@
 
                 <div class="md:w-[50%] sm:w-full flex items-center justify-center">
                     
-                    <form id="form" class="w-full flex flex-col justify-center items-center">
+                    <form id="form" class="w-full flex flex-col justify-center items-center z-0">
                         <div class="w-full flex items-center justify-between">
                             <div class="form-control w-[48%]">
                                 <input type="text" id="firstname" placeholder="First Name" class="w-full h-[3rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded" />
