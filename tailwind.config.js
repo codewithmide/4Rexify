@@ -3,8 +3,8 @@ module.exports = {
   content: ["index.html", "./src/script.js"],
   theme: {
     colors: {
-      'orange': '#F6AA1C',
-      'darkSienna': '#220901',
+      'mint': '#ADEFD1FF',
+      'sailorBlue': '#00203FFF',
       'white': '#ffffff',
     },
     fontWeight: {
@@ -17,6 +17,7 @@ module.exports = {
       md: '768px',
       lg: '976px',
       xl: '1024px',
+      xxl: '1440px',
     },
     extend: {
       fontFamily: {
