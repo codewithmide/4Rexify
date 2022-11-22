@@ -513,40 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 200px) {
-  .container {
-    max-width: 200px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 976px) {
-  .container {
-    max-width: 976px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -655,8 +621,8 @@ video {
   height: 100%;
 }
 
-.h-\[50\%\] {
-  height: 50%;
+.h-\[100\%\] {
+  height: 100%;
 }
 
 .h-\[90\%\] {
@@ -673,10 +639,6 @@ video {
 
 .h-\[80\%\] {
   height: 80%;
-}
-
-.h-\[100\%\] {
-  height: 100%;
 }
 
 .w-full {
@@ -767,10 +729,6 @@ video {
   border-radius: 0.25rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .bg-sailorBlue {
   background-color: #00203FFF;
 }
@@ -787,11 +745,6 @@ video {
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-0 {
@@ -919,10 +872,6 @@ video {
   outline-offset: 2px;
 }
 
-.outline {
-  outline-style: solid;
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1010,20 +959,12 @@ video {
     height: 90vh;
   }
 
-  .sm\:h-\[105vh\] {
-    height: 105vh;
-  }
-
-  .sm\:h-\[100\%\] {
-    height: 100%;
-  }
-
   .sm\:h-\[110vh\] {
     height: 110vh;
   }
 
-  .sm\:h-\[10vh\] {
-    height: 10vh;
+  .sm\:h-\[100\%\] {
+    height: 100%;
   }
 
   .sm\:w-\[90\%\] {
@@ -1308,11 +1249,5 @@ video {
 
   .xl\:text-medium {
     font-size: 1.6rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .xxl\:w-\[80\%\] {
-    width: 80%;
   }
 }
