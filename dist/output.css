@@ -589,6 +589,14 @@ video {
   margin-right: 1rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -617,8 +625,8 @@ video {
   height: 100%;
 }
 
-.h-\[55\%\] {
-  height: 55%;
+.h-\[50\%\] {
+  height: 50%;
 }
 
 .h-\[90\%\] {
@@ -635,18 +643,6 @@ video {
 
 .h-\[80\%\] {
   height: 80%;
-}
-
-.h-\[\%\] {
-  height: %;
-}
-
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[50\%\] {
-  height: 50%;
 }
 
 .w-full {
@@ -709,6 +705,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -744,10 +744,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\.\/src\/imagessrc\/images\/money-chair\.png\'\)\] {
-  background-image: url('./src/imagessrc/images/money-chair.png');
 }
 
 .object-contain {
@@ -936,8 +932,8 @@ video {
     margin-top: 1rem;
   }
 
-  .sm\:mt-\[5rem\] {
-    margin-top: 5rem;
+  .sm\:mt-\[0rem\] {
+    margin-top: 0rem;
   }
 
   .sm\:mb-10 {
@@ -964,34 +960,6 @@ video {
     margin-top: 0px;
   }
 
-  .sm\:mt-\[2rem\] {
-    margin-top: 2rem;
-  }
-
-  .sm\:mt-\[0rem\] {
-    margin-top: 0rem;
-  }
-
-  .sm\:mt-\[-1rem\] {
-    margin-top: -1rem;
-  }
-
-  .sm\:mt-\[-2rem\] {
-    margin-top: -2rem;
-  }
-
-  .sm\:mt-\[-3rem\] {
-    margin-top: -3rem;
-  }
-
-  .sm\:mt-\[-3r\] {
-    margin-top: -3r;
-  }
-
-  .sm\:mt-\[0r\] {
-    margin-top: 0r;
-  }
-
   .sm\:hidden {
     display: none;
   }
@@ -1006,23 +974,6 @@ video {
 
   .sm\:h-\[100\%\] {
     height: 100%;
-  }
-
-  .sm\:h-full {
-    height: 100%;
-  }
-
-  .sm\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .sm\:h-\[\] {
-    height: ;
-  }
-
-  .sm\:h-\[100vh\] {
-    height: 100vh;
   }
 
   .sm\:w-\[90\%\] {
@@ -1169,6 +1120,14 @@ video {
     width: 50%;
   }
 
+  .md\:w-\[30\] {
+    width: 30;
+  }
+
+  .md\:w-\[30\%\] {
+    width: 30%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1248,6 +1207,10 @@ video {
     margin-bottom: 2rem;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:h-\[60vh\] {
     height: 60vh;
   }
@@ -1266,6 +1229,10 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[30\%\] {
+    width: 30%;
   }
 
   .lg\:gap-6 {
@@ -1297,12 +1264,20 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:h-\[90vh\] {
     height: 90vh;
   }
 
   .xl\:h-\[100vh\] {
     height: 100vh;
+  }
+
+  .xl\:w-\[30\%\] {
+    width: 30%;
   }
 
   .xl\:text-big {
