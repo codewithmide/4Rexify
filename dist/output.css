@@ -649,10 +649,6 @@ video {
   width: 1rem;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
@@ -709,6 +705,10 @@ video {
   overflow-x: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -732,6 +732,34 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-hero-pattern {
+  background-image: url('./src/images/money-chair.png');
+}
+
+.bg-\[url\(\'\.\/src\/images\/money-chair\.png\'\)\] {
+  background-image: url('./src/images/money-chair.png');
+}
+
+.bg-\[url\(\'src\/images\/money-chair\.png\'\)\] {
+  background-image: url('src/images/money-chair.png');
+}
+
+.bg-\[url\(\'\.\/srcsrc\/images\/money-chair\.png\'\)\] {
+  background-image: url('./srcsrc/images/money-chair.png');
+}
+
+.bg-\[url\(\'\.\/src\/src\/images\/money-chair\.png\'\)\] {
+  background-image: url('./src/src/images/money-chair.png');
+}
+
+.bg-\[url\(\'\.\/src\/imagessrc\/images\/money-chair\.png\'\)\] {
+  background-image: url('./src/imagessrc/images/money-chair.png');
 }
 
 .object-contain {
@@ -1076,16 +1104,12 @@ video {
     height: 50vh;
   }
 
-  .md\:w-\[80\%\] {
-    width: 80%;
+  .md\:w-\[90\%\] {
+    width: 90%;
   }
 
   .md\:w-\[15\%\] {
     width: 15%;
-  }
-
-  .md\:w-\[90\%\] {
-    width: 90%;
   }
 
   .md\:w-full {
@@ -1171,12 +1195,6 @@ video {
 }
 
 @media (min-width: 976px) {
-  @media (min-width: 768px) {
-    .lg\:md\:w-\[80\%\] {
-      width: 80%;
-    }
-  }
-
   .lg\:mt-\[1rem\] {
     margin-top: 1rem;
   }
@@ -1207,22 +1225,6 @@ video {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .lg\:w-\[\%\] {
-    width: %;
-  }
-
-  .lg\:w-\[\] {
-    width: ;
-  }
-
-  .lg\:w-\[90\] {
-    width: 90;
   }
 
   .lg\:gap-6 {
@@ -1260,10 +1262,6 @@ video {
 
   .xl\:h-\[100vh\] {
     height: 100vh;
-  }
-
-  .xl\:w-\[80\%\] {
-    width: 80%;
   }
 
   .xl\:text-big {

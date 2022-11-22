@@ -20,6 +20,10 @@ module.exports = {
       xxl: '1440px',
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('./src/images/money-chair.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       fontFamily: {
         Serif: ['Epilogue', 'sans-serif'],
         Montserrat: ['Montserrat', 'sans-serif']
