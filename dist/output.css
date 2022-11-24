@@ -553,6 +553,10 @@ video {
   z-index: 0;
 }
 
+.float-right {
+  float: right;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -608,6 +612,22 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .block {
@@ -666,10 +686,6 @@ video {
   height: 85%;
 }
 
-.h-\[47\%\] {
-  height: 47%;
-}
-
 .h-\[20\%\] {
   height: 20%;
 }
@@ -678,8 +694,24 @@ video {
   height: 1.25rem;
 }
 
-.h-\[46\%\] {
-  height: 46%;
+.h-\[\] {
+  height: ;
+}
+
+.h-\[60\] {
+  height: 60;
+}
+
+.h-\[60\%\] {
+  height: 60%;
+}
+
+.h-\[95\%\] {
+  height: 95%;
+}
+
+.h-\[120vh\] {
+  height: 120vh;
 }
 
 .w-full {
@@ -698,40 +730,12 @@ video {
   width: 100%;
 }
 
-.w-\[33\%\] {
-  width: 33%;
-}
-
 .w-\[48\%\] {
   width: 48%;
 }
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-\[32\%\] {
-  width: 32%;
-}
-
-.w-\[31\%\] {
-  width: 31%;
-}
-
-.w-\[313\%\] {
-  width: 313%;
-}
-
-.w-\[3\%\] {
-  width: 3%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[23\%\] {
-  width: 23%;
 }
 
 .transform {
@@ -748,10 +752,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -842,6 +842,11 @@ video {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -862,6 +867,16 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-6 {
@@ -916,6 +931,16 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -1070,44 +1095,28 @@ video {
     height: 90vh;
   }
 
-  .sm\:h-\[110vh\] {
-    height: 110vh;
-  }
-
   .sm\:h-\[100\%\] {
     height: 100%;
-  }
-
-  .sm\:h-\[200vh\] {
-    height: 200vh;
-  }
-
-  .sm\:h-\[300vh\] {
-    height: 300vh;
-  }
-
-  .sm\:h-\[\] {
-    height: ;
-  }
-
-  .sm\:h-\[150\] {
-    height: 150;
-  }
-
-  .sm\:h-\[250\] {
-    height: 250;
   }
 
   .sm\:h-\[250px\] {
     height: 250px;
   }
 
-  .sm\:h-\[200px\] {
-    height: 200px;
+  .sm\:h-\[300px\] {
+    height: 300px;
   }
 
-  .sm\:h-\[250vh\] {
-    height: 250vh;
+  .sm\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .sm\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .sm\:h-\[500px\] {
+    height: 500px;
   }
 
   .sm\:w-\[90\%\] {
@@ -1158,20 +1167,16 @@ video {
     justify-content: space-between;
   }
 
-  .sm\:gap-14 {
-    gap: 3.5rem;
-  }
-
   .sm\:gap-0 {
     gap: 0px;
   }
 
-  .sm\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .sm\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .sm\:gap-14 {
+    gap: 3.5rem;
   }
 
   .sm\:p-6 {
@@ -1250,28 +1255,24 @@ video {
     height: 60vh;
   }
 
-  .md\:h-\[50vh\] {
-    height: 50vh;
-  }
-
   .md\:h-\[100\%\] {
     height: 100%;
   }
 
-  .md\:h-\[10\%\] {
-    height: 10%;
-  }
-
-  .md\:h-\[1-0\%\] {
-    height: 1-0%;
-  }
-
-  .md\:h-\[0\%\] {
-    height: 0%;
-  }
-
   .md\:h-\[46\%\] {
     height: 46%;
+  }
+
+  .md\:h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .md\:h-\[\%\] {
+    height: %;
+  }
+
+  .md\:h-\[49\%\] {
+    height: 49%;
   }
 
   .md\:w-\[90\%\] {
@@ -1294,6 +1295,10 @@ video {
     width: 45%;
   }
 
+  .md\:w-\[32\%\] {
+    width: 32%;
+  }
+
   .md\:w-\[40\%\] {
     width: 40%;
   }
@@ -1306,8 +1311,8 @@ video {
     width: 10%;
   }
 
-  .md\:w-\[32\%\] {
-    width: 32%;
+  .md\:w-\[30\%\] {
+    width: 30%;
   }
 
   .md\:grid-cols-3 {
@@ -1410,6 +1415,10 @@ video {
     height: 100vh;
   }
 
+  .lg\:h-\[120vh\] {
+    height: 120vh;
+  }
+
   .lg\:w-\[90\%\] {
     width: 90%;
   }
@@ -1457,6 +1466,18 @@ video {
 
   .xl\:h-\[100vh\] {
     height: 100vh;
+  }
+
+  .xl\:h-\[110vh\] {
+    height: 110vh;
+  }
+
+  .xl\:h-\[120vh\] {
+    height: 120vh;
+  }
+
+  .xl\:h-\[150vh\] {
+    height: 150vh;
   }
 
   .xl\:text-big {
