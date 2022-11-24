@@ -94,20 +94,3 @@ close.addEventListener('click', () => {
   menu.style.display = 'flex';
   close.style.display = 'none';
 })
-
-
-
-
-var myHeaders = new Headers();
-myHeaders.append("apikey", "u7GvmCQ6OhLbpvNpjcyG5ly1THpHHUil");
-
-var requestOptions = {
-  method: 'GET',
-  redirect: 'follow',
-  headers: myHeaders
-};
-
-fetch("https://api.apilayer.com/exchangerates_data/convert?to=USD&from=EUR&amount=120", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
