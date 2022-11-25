@@ -86,10 +86,15 @@
 
             <div class=" sm:hidden md:flex md:gap-3 lg:gap-6 items-center justify-center">
 
-                <ul class="md:flex items-center lg:gap-6 md:gap-3 text-white font-Montserrat">
+                <ul class="md:flex items-center lg:gap-6 md:gap-3 text-white font-Serif">
                     <li class="hover:text-mint cursor-pointer focus:text-mint">
                         <a href="#about" class="lg:text-normal md:text-small">
                             How it works?
+                        </a>
+                    </li>
+                    <li class="hover:text-mint cursor-pointer">
+                        <a href="#contact" class="lg:text-normal md:text-small">
+                            Get Started
                         </a>
                     </li>
                     <li class="hover:text-mint cursor-pointer">
@@ -103,13 +108,20 @@
                         </a>
                     </li>
                 </ul>
-                
-                <a href="#convert">
-                    <button type="button" class="font-Montserrat font-bold text-center focus:outline-none text-sailorBlue bg-mint focus:ring-2 focus:ring-white font-medium sm:hidden md:flex rounded-lg lg:px-6 lg:py-2.5 md:px-4 md:py-2 lg:text-normal md:text-small m-auto">
-                        Get Started
+
+            </div>
+
+            <div class="flex gap-4 md:flex sm:hidden">
+                <a href="#">
+                    <button type="button" class="font-Serif text-center focus:outline-none text-white border-solid border-2 bg-none font-medium sm:hidden md:flex rounded-lg lg:px-6 lg:py-2.5 md:px-4 md:py-2 lg:text-normal md:text-small m-auto hover:bg-mint hover:text-sailorBlue">
+                        Login
                     </button>
                 </a>
-
+                <a href="#">
+                    <button type="button" class="font-Serif text-center focus:outline-none text-sailorBlue bg-white focus:ring-2 focus:ring-white font-medium sm:hidden md:flex rounded-lg lg:px-6 lg:py-2.5 md:px-4 md:py-2 lg:text-normal md:text-small m-auto">
+                        Sign up
+                    </button>
+                </a>
             </div>
 
             <div class="md:hidden mobile-action-menu mr-6">
@@ -127,12 +139,17 @@
 
     </header>
 
-    <div class="w-screen h-[100%] absolute z-10 md:hidden flex items-center mobile-nav-links sm:hidden bg-sailorBlue">
+    <div class="w-screen h-[100%] absolute z-10 md:hidden flex flex-col items-start justify-center gap-10 mobile-nav-links sm:hidden bg-sailorBlue">
         <div class="flex flex-col items-center ml-10">
-            <ul class="text-white font-Montserrat justify-between gap-6 flex flex-col">
+            <ul class="text-white font-Montserrat justify-between gap-2 flex flex-col">
                 <li class="hover:text-mint cursor-pointer focus:text-mint">
                     <a href="#about">
                         How it works?
+                    </a>
+                </li>
+                <li class="hover:text-mint cursor-pointer">
+                    <a href="#contact" class="lg:text-normal md:text-small">
+                        Get Started
                     </a>
                 </li>
                 <li class="hover:text-mint cursor-pointer">
@@ -145,12 +162,20 @@
                         Contact Us
                     </a>
                 </li>
-                <a href="#convert">
-                    <button type="button" class="font-Montserrat font-bold text-center focus:outline-none text-sailorBlue bg-mint focus:ring-2 focus:ring-white font-medium rounded-lg md:text-small m-auto px-5 py-3">
-                        Get Started
-                    </button>
-                </a>
             </ul>
+        </div>
+
+        <div class="flex flex-col gap-4 ml-10">
+            <a href="#">
+                <button type="button" class="font-Serif text-center focus:outline-none text-white border-solid border-2 bg-none font-medium rounded-lg px-4 py-2 hover:bg-mint hover:text-sailorBlue">
+                    Login
+                </button>
+            </a>
+            <a href="#">
+                <button type="button" class="font-Serif text-center focus:outline-none text-sailorBlue bg-white focus:ring-2 focus:ring-white font-medium rounded-lg py-2.5 px-4 py-2">
+                    Sign up
+                </button>
+            </a>
         </div>
     </div>
 
@@ -170,7 +195,7 @@
 
     </div>
 
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-red-600 text-sailorBlue bg-mint font-medium font-bold text-xs leading-tight uppercase rounded-full shadow-md transition duration-150 ease-in-out bottom-5 right-5 z-10" id="btn-back-to-top">
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-sailorBlue bg-mint font-bold text-xs leading-tight uppercase rounded-full shadow-md transition duration-150 ease-in-out bottom-5 right-5 z-10" id="btn-back-to-top">
         <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
         </svg>
