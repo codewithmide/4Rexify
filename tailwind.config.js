@@ -1,10 +1,11 @@
 1/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "./src/script.js"],
+  content: ["index.html", "./src/script.js", "./public/pages/login.html"],
   theme: {
     colors: {
       'mint': '#ADEFD1FF',
-      'sailorBlue': '#00203FFF',
+      'sailorBlue': '#00203F',
+      'shadow': '#0a5dad',
       'white': '#ffffff',
     },
     fontWeight: {
