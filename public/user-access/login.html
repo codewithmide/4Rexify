@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/images/title-icon.png" type="image/4rexify-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;800&family=Montserrat&family=Raleway+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>log-in | 4Rexify</title>
+</head>
+<body class="bg-sailorBlue w-[100vw] h-[100vh] overflow-hidden">
+    <header class="w-full h-16 flex items-center justify-center bg-mint">
+
+        <nav class="lg:w-[90%] md:w-[90%] sm:w-[90%] flex items-center justify-between">
+
+            <div class="w-[30%] h-full cursor-pointer">
+                <i class="fa-solid fa-backward-step"></i>
+                <a href="/index.html" class="lg:text-normal sm:text-small font-Serif text-sailorBlue hover:underline">
+                    Back Home
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="w-full h-full">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <div class="w-full bg-white rounded-lg md:mt-0 sm:max-w-md xl:p-0">
+                <div class="p-6 sm:p-8">
+                    <h1 class="leading-tight tracking-tight mb-3 text-sailorBlue font-Serif font-normal md:text-2xl">
+                        Log into your account
+                    </h1>
+                    <form class="" action="#">
+                        <div class="">
+                            <label for="email" class="block mb-2 font-medium text-sailorBlue font-Serif font-medium">Your email</label>
+                            <input type="email" name="email" id="email" class="w-full h-[3rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4 border outline-sailorBlue" placeholder="name@company.com" required="">
+                        </div>
+                        <div class="mt-3">
+                            <label for="password" class="block mb-2 text-sm font-medium text-sailorBlue font-Serif">Password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••" class="w-full h-[3rem] font-Montserrat font-bold text-small outline-sailorBlue rounded cursor-pointer pl-4 border" required="">
+                        </div>
+                        <button type="submit" class="w-full text-white bg-sailorBlue my-3 font-Serif rounded-lg px-5 py-3 text-center">Log in</button>
+                        <p class="text-center font-medium text-sailorBlue font-Serif">
+                            Do not have an account? <a href="./signup.html" class="font-medium text-sailorblue font-Serif underline">Sign-up here</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
