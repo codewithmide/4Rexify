@@ -288,7 +288,7 @@
                     <h3 class="font-bold font-Montserrat text-white mb-3">
                         Select a currency
                     </h3>
-                    <select id="currency" name="currency" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
+                    <select id="currencyOne" name="currency" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
                         <option value="AFN" class="afg">AFN - Afghan Afghani</option>
                         <option value="ALL">ALL - Albanian Lek</option>
                         <option value="DZD">DZD - Algerian Dinar</option>
@@ -460,7 +460,7 @@
                     <h3 class="font-bold font-Montserrat text-white mb-3">
                         Enter a value
                     </h3>
-                    <input type="number" name="number" placeholder="0" id="number" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
+                    <input type="number" name="number" placeholder="0" id="firstValue" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
                 </div>
 
             </div>
@@ -472,7 +472,7 @@
                     <h3 class="font-bold font-Montserrat text-white mb-3">
                         Convert to
                     </h3>
-                    <select id="currency" name="currency" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded">
+                    <select id="currencyTwo" name="currency" class="w-full h-[3.5rem] font-Montserrat font-bold text-small cursor-pointer pl-4 rounded">
                         <option value="AFN" class="afg">AFN - Afghan Afghani</option>
                         <option value="ALL">ALL - Albanian Lek</option>
                         <option value="DZD">DZD - Algerian Dinar</option>
@@ -654,7 +654,7 @@
                     <h3 class="font-bold font-Montserrat text-white mb-3">
                         Value
                     </h3>
-                    <input readonly type="number" name="number" placeholder="0" id="number" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded pl-4 cursor-not-allowed outline-none">
+                    <input readonly type="number" name="number" placeholder="0" id="secondValue" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded pl-4 cursor-not-allowed outline-none">
                 </div>
 
             </div>
@@ -902,6 +902,7 @@
     <script src="/public/scripts/script.js"></script>
     <script src="/public/scripts/form.js"></script>
     <script src="/public/scripts/mobile.js"></script>
+    <script src="/public/scripts/converter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto", {
