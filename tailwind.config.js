@@ -1,6 +1,10 @@
 1/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "./src/script.js", "./public/pages/login.html"],
+  content: ["index.html",
+            "./src/script.js",
+            "./public/user-access/login.html",
+            "./public/user-access/signup.html"
+          ],
   theme: {
     colors: {
       'mint': '#ADEFD1FF',
