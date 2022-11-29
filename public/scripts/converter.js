@@ -1,18 +1,28 @@
-let firstCurrency = document.getElementById('curencyOne');
-let firstValue = document.getElementById('firstValue');
+let firstCurrency = document.querySelectorAll('option');
+let firstValue = document.getElementById('firstValue').value;
 let secondCurrency = document.getElementById('currencyTwo');
-let secondValue = document.getElementById('secondValue');
+let secondValue = document.getElementById('secondValue').value;
+let btn = document.getElementById('convertBtn')
+
+console.log(firstValue);
+
+document.getElementById('convertBtn2').onclick = function() {
+  var selected = [];
+  for (var option of document.getElementById('currencyTwo').options) {
+    if (option.selected) {
+      selected.push(option.value);
+    }
+  }
+  let one = selected.join('').toString()
+  console.log(one);
+}
+
+
 
 const host = 'api.frankfurter.app';
-const firstMoney = firstValue.innerHTML
-const currencyOne = firstCurrency.value
 
-const secondMoney = firstValue.innerHTML
-const currencyTwo = firstCurrency.value
-
-
-fetch(`https://${host}/latest?amount=${firstMoney}&from=${currencyOne}&to=${secondMoney}`)
+fetch(`https://${host}/latest?amount=${firstValue}&from=GBP&to=USD`)
   .then(resp => resp.json())
   .then((data) => {
-    alert(`10 GBP = ${data.rates.USD} USD`);
+    console.log(`10 GBP = ${data.rates.USD} USD`);
   });
