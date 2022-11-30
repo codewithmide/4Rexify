@@ -2,8 +2,8 @@
 module.exports = {
   content: ["index.html",
             "./src/script.js",
-            "./public/user-access/login.html",
-            "./public/user-access/signup.html"
+            "./public/pages/login.html",
+            "./public/pages/signup.html"
           ],
   theme: {
     colors: {
