@@ -8,39 +8,40 @@ let btn = document.getElementById('convertBtn2')
 
 function getcurrencyOne() {
   var selected = [];
-  inheritOne = '';
   for (var option of document.getElementById('currencyOne').options) {
     if (option.selected) {
       selected.push(option.value);
     }
   }
   let one = selected.join('').toString()
-  inheritOne = one;
-  return inheritOne;
+  return one;
 }
 
+let inheritOne = '';
+inheritOne = getcurrencyOne().toString();
 
 
 function getcurrencyTwo() {
   var selected = [];
-  inheritTwo = '';
   for (var option of document.getElementById('currencyTwo').options) {
     if (option.selected) {
       selected.push(option.value);
     }
   }
-  let one = selected.join('').toString()
-  inheritTwo = one;
-  return inheritTwo;
+  let two = selected.join('').toString()
+  return two;
 }
+
+let inheritTwo = '';
+inheritTwo = getcurrencyTwo().toString();
 
 
 let valueOne = parseInt(firstValue);
 
 
 const host = 'api.frankfurter.app';
-fetch(`https://${host}/latest?amount=${valueOne}&from=GBP&to=${inheritOne}`)
+fetch(`https://${host}/latest?amount=${valueOne}&from=${inheritOne}&to=${inheritTwo}`)
   .then(resp => resp.json())
   .then((data) => {
-    console.log(`10 ${numberOne} = ${data.rates.USD} ${numberTwo}`);
+    console.log(`10 ${inheritOne} = ${data.rates.USD} ${inheritTwo}`);
   });
