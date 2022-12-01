@@ -8,35 +8,38 @@ let btn = document.getElementById('convertBtn2')
 
 function getcurrencyOne() {
   var selected = [];
+  inheritOne = '';
   for (var option of document.getElementById('currencyOne').options) {
     if (option.selected) {
       selected.push(option.value);
     }
   }
   let one = selected.join('').toString()
-  return one;
+  inheritOne = one;
+  return inheritOne;
 }
-let numberOne = getcurrencyOne();
 
 
 
 function getcurrencyTwo() {
   var selected = [];
+  inheritTwo = '';
   for (var option of document.getElementById('currencyTwo').options) {
     if (option.selected) {
       selected.push(option.value);
     }
   }
   let one = selected.join('').toString()
-  return one;
+  inheritTwo = one;
+  return inheritTwo;
 }
-let numberTwo = getcurrencyTwo();
 
 
+let valueOne = parseInt(firstValue);
 
 
 const host = 'api.frankfurter.app';
-fetch(`https://${host}/latest?amount=${firstValue}&from=GBP&to=USD`)
+fetch(`https://${host}/latest?amount=${valueOne}&from=GBP&to=${inheritOne}`)
   .then(resp => resp.json())
   .then((data) => {
     console.log(`10 ${numberOne} = ${data.rates.USD} ${numberTwo}`);
