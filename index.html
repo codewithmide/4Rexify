@@ -272,31 +272,58 @@
     </div>
 
     <div id="convert" class="w-full lg:h-[100vh] md:h-[60vh] flex flex-col items-center justify-center">
+        <div class="lg:w-[90%] md:w-[90%] sm:w-[90%] h-full flex m-auto flex-col">
+            <div class="w-full flex f md:mt-24 sm:mt-10 mb-6">
+                <h1 class="text-mint font-Serif font-bold xl:text-big md:text-semiBig sm:text-semiBig">
+                    Make your conversion
+                </h1>
+            </div>
 
+            <div class="w-full flex md:flex-row sm:flex-col justify-between gap-3">
+                <form class="flex flex-col gap-6 w-full h-full">
+                    <div class="flex align-center justify-between">
+                        <div class="md:w-[45%] sm:w-full flex flex-col">
+                            <label class="font-bold font-Montserrat text-white mb-3">Select a currency</label>
+                            <select id="from" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="INR">INR</option>
+                            </select>
+                        </div>
+                        <div class="md:w-[45%] sm:w-full flex flex-col">
+                            <label class="font-bold font-Montserrat text-white mb-3">Enter a value</label>
+                            <input type="text" id="amount" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4"/>
+                        </div>
+                    </div>
+                    
 
-        <h1>Currency Converter</h1>
-   <p> Select Currency and enter Amount to convert.</p>
-   <form>
-      <label>From:</label>
-      <select id="from">
-         <option value="USD">USD</option>
-         <option value="EUR">EUR</option>
-         <option value="GBP">GBP</option>
-         <option value="INR">INR</option>
-      </select>
-      <label>To:</label>
-      <select id="to">
-         <option value="USD">USD</option>
-         <option value="EUR">EUR</option>
-         <option value="GBP">GBP</option>
-         <option value="INR">INR</option>
-      </select>
-      <label>Amount:</label>
-      <input type="text" id="amount" />
-      <button type="button" id="convert">Convert</button>
-      <p id="result"></p>
-   </form>
+                    <div class="flex w-full align-center justify-between">
+                        <div class="md:w-[45%] sm:w-full flex flex-col justify-between">
+                            <label class="font-bold font-Montserrat text-white mb-3">Convert to</label>
+                            <select id="to" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="INR">INR</option>
+                            </select>
+                        </div>
 
+                        <div class="md:w-[45%] sm:w-full flex flex-col justify-between">
+                            <label class="font-bold font-Montserrat text-white mb-3">The value of <span id="valueOne"></span> to <span id="valueTwo"></span> is</label>
+                            <input type="text" id="result" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4"/>
+                        </div>
+                        
+                    </div>
+                    
+
+                    
+                    <button type="button" id="convert">Convert</button>
+                    <p ></p>
+                </form>
+
+            </div>
+        </div>
     </div>
 
     <div class="w-full sm:mb-10 flex items-center justify-center" id="blogs">

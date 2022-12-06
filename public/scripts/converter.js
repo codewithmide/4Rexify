@@ -65,6 +65,8 @@
 
 const convert = document.getElementById("convert");
 const result = document.getElementById("result");
+const valueOne = document.getElementById("valueOne");
+const valueTwo = document.getElementById("valueTwo");
 const from = document.getElementById("from");
 const to = document.getElementById("to");
 const amount = document.getElementById("amount");
@@ -81,5 +83,7 @@ convert.addEventListener("click", function() {
       let total = rate * amt;
       result.innerHTML = `${amt} ${fromCurrency} = ${total}
       ${toCurrency}`;
+      // valueOne.innerHTML = `${toCurrency}`
+      // valueTwo.innerHTML = `${fromCurrency}`
     });
 });
