@@ -283,7 +283,7 @@
 
 
     <!-- CONVERTER SECTION -->
-    <section id="convert" class="w-full lg:h-[100vh] md:h-[60vh] flex flex-col items-center justify-center sm:my-12 md:my-0">
+    <section id="convert" class="w-full lg:h-[100vh] md:h-[60vh] flex flex-col items-center justify-center sm:my-16 md:my-0">
         <div class="w-[90%] flex h-[80%] flex-col">
             <div class="w-full flex items-start  mb-6">
                 <h1 class="text-mint font-Serif font-bold xl:text-big md:text-semiBig sm:text-semiBig">
@@ -295,8 +295,8 @@
                 <form class="flex flex-col gap-6 w-full h-full">
                     <div class="flex md:flex-row sm:flex-col justify-between">
                         <div class="md:w-[45%] sm:w-full flex flex-col">
-                            <label class="font-bold font-Montserrat text-white mb-3">Select a currency</label>
-                            <select id="from" class="w-full h-[3.5rem] font-Montserrat font-bold md:text-normal sm:text-small rounded cursor-pointer outline-none active:outline-none pl-4">
+                            <label class="font-bold font-Montserrat text-white mb-2">Select a currency</label>
+                            <select id="from" class="w-full h-[3.5rem] font-Montserrat font-bold md:text-normal sm:text-small rounded cursor-pointer outline-none active:outline-none pl-4 appearance-none">
                                 <option value="AFN">AFN - Afghan Afghani</option>
                                 <option value="ALL">ALL - Albanian Lek</option>
                                 <option value="DZD">DZD - Algerian Dinar</option>
@@ -464,7 +464,7 @@
                             </select>
                         </div>
                         <div class="md:w-[45%] sm:w-full sm:mt-6 md:mt-0 flex flex-col">
-                            <label class="font-bold font-Montserrat text-white mb-3">Enter a value</label>
+                            <label class="font-bold font-Montserrat text-white mb-2">Enter a value</label>
                             <input type="number" id="amount" class="w-full h-[3.5rem] font-Montserrat font-bold rounded cursor-pointer pl-4 md:text-normal sm:text-small outline-none active:outline-none"/>
                         </div>
                     </div>
@@ -472,8 +472,8 @@
 
                     <div class="flex md:flex-row sm:flex-col w-full align-center justify-between">
                         <div class="md:w-[45%] sm:w-full flex flex-col justify-between sm:mt-3 md:mt-0">
-                            <label class="font-bold font-Montserrat text-white mb-3">Convert to</label>
-                            <select id="to" class="w-full h-[3.5rem] font-Montserrat font-bold md:text-normal sm:text-small rounded cursor-pointer pl-4 outline-none active:outline-none">
+                            <label class="font-bold font-Montserrat text-white mb-2">Convert to</label>
+                            <select id="to" class="w-full h-[3.5rem] font-Montserrat font-bold md:text-normal sm:text-small rounded cursor-pointer pl-4 outline-none active:outline-none appearance-none">
                                 <option value="AFN">AFN - Afghan Afghani</option>
                                 <option value="ALL">ALL - Albanian Lek</option>
                                 <option value="DZD">DZD - Algerian Dinar</option>
@@ -642,15 +642,15 @@
                         </div>
 
                         <div class="md:w-[45%] sm:w-full sm:mt-6 md:mt-0 flex flex-col items-start md:justify-end h-full">
-                            <p id="result" class="font-bold text-mint font-Montserrat md:mb-3 sm:mb-0 text-medium"></p>
+                            <p id="result" class="font-bold text-mint font-Montserrat text-medium">NGN = 0 USD</p>
                         </div>
                         
                     </div>
                     
                 </form>
 
-                <div class="mt-10 w-[7rem]">
-                    <button type="button" id="convert" class="font-Montserrat tracking-widest text-center font-bold focus:outline-none text-sailorBlue bg-mint font-medium rounded-lg md:px-4 md:py-3.5 sm:px-4 sm:py-3.5 md:w-full hover:scale-95 border-none outline-none active:outline-none">
+                <div class="mt-6 w-[7rem]">
+                    <button type="button" id="convert" class="font-Serif text-center text-sailorBlue bg-mint font-medium sm:text-small md:text-normal rounded-lg md:px-7 md:py-3.5 sm:px-5 sm:py-3 hover:scale-95 mt-10 sm:mt-0">
                         Convert
                     </button>
                 </div>
@@ -662,10 +662,10 @@
     <!-- BLOG SECTION -->
     <section class="w-full sm:mb-10 flex items-center justify-center" id="blogs">
 
-        <div class="md:w-[90%] sm:w-[90%] md:h-[100%] sm:h-[100%] flex flex-col md:gap-8 sm:gap-0">
+        <div class="w-[90%] md:h-[100%] sm:h-[100%] flex flex-col md:gap-8 sm:gap-0">
 
             <div class="flex h-[10%] items-start md:mb-0 sm:mb-10">
-                <h1 class="font-Serif text-mint font-bold text-big text-left w-full md:mt-0 sm:mt-10 md:mb-0 sm:mb-6 leading-none xl:text-big md:text-semiBig sm:text-semiBig">
+                <h1 class="font-Serif text-mint font-bold text-big text-left w-full md:mt-0 sm:mt-10 md:mb-0 sm:mb-6 leading-none xl:text-big sm:text-semiBig">
                     Blogs
                 </h1>
             </div>
@@ -763,7 +763,7 @@
 
     <!-- CONTACT SECTION -->
     <section class="flex w-[100%] lg:h-[100vh] md:h-[50vh] sm:mb-20 md:mb-0 items-center justify-center md:mt-0 sm:mt-20" id="contact">
-        <div class="lg:w-[90%] md:w-[90%] sm:w-[90%] h-[80%] flex flex-col">
+        <div class="w-[90%] h-[80%] flex flex-col">
             <div>
                 <h1 class="font-bold text-mint font-Serif xl:text-big md:text-semiBig sm:text-semiBig">
                     Contact us
@@ -831,10 +831,16 @@
                     <h2 class="md:mb-6 sm:mb-4 text-sm font-bold text-sailorBlue font-Serif uppercase">Resources</h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="md:mb-4 sm:mb-2">
-                            <a href="#" class="hover:underline">4Rexify</a>
+                            <a href="https://www.exchangerate-api.com/" class="hover:underline">ExchangeRate API</a>
+                        </li>
+                        <li class="md:mb-4 sm:mb-2">
+                            <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                        </li>
+                        <li class="md:mb-4 sm:mb-2">
+                            <a href="https://fontawesome.com/" class="hover:underline">Font-Awesome</a>
                         </li>
                         <li>
-                            <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            <a href="https://icons8.com/illustrations" class="hover:underline">icons8 Illustration</a>
                         </li>
                     </ul>
                 </div>
