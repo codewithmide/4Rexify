@@ -624,6 +624,10 @@ video {
   margin-left: 0.75rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -769,12 +773,24 @@ video {
   flex-wrap: wrap;
 }
 
+.place-items-end {
+  place-items: end;
+}
+
 .items-start {
   align-items: flex-start;
 }
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -985,6 +1001,10 @@ video {
   line-height: 1.25rem;
 }
 
+.text-medium {
+  font-size: 1.6rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1041,6 +1061,11 @@ video {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .outline-sailorBlue {
@@ -1110,6 +1135,11 @@ video {
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.active\:outline-none:active {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 @media (min-width: 200px) {

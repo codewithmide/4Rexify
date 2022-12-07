@@ -93,7 +93,7 @@
                         </a>
                     </li>
                     <li class="hover:underline cursor-pointer">
-                        <a href="#contact" class="lg:text-normal md:text-small">
+                        <a href="#convert" class="lg:text-normal md:text-small">
                             Get Started
                         </a>
                     </li>
@@ -271,7 +271,7 @@
         </div>
     </div>
 
-    <div id="convert" class="w-full lg:h-[100vh] md:h-[60vh] flex flex-col items-center justify-center">
+    <div id="convert" class="w-full xl:h-[100vh] md:h-[60vh] flex flex-col items-center justify-center">
         <div class="lg:w-[90%] md:w-[90%] sm:w-[90%] h-full flex m-auto flex-col">
             <div class="w-full flex f md:mt-24 sm:mt-10 mb-6">
                 <h1 class="text-mint font-Serif font-bold xl:text-big md:text-semiBig sm:text-semiBig">
@@ -284,7 +284,7 @@
                     <div class="flex align-center justify-between">
                         <div class="md:w-[45%] sm:w-full flex flex-col">
                             <label class="font-bold font-Montserrat text-white mb-3">Select a currency</label>
-                            <select id="from" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
+                            <select id="from" class="w-full h-[3.5rem] font-Montserrat font-bold text-normal rounded cursor-pointer outline-none active:outline-none pl-4">
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
                                 <option value="GBP">GBP</option>
@@ -293,7 +293,7 @@
                         </div>
                         <div class="md:w-[45%] sm:w-full flex flex-col">
                             <label class="font-bold font-Montserrat text-white mb-3">Enter a value</label>
-                            <input type="text" id="amount" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4"/>
+                            <input type="number" id="amount" class="w-full h-[3.5rem] font-Montserrat font-bold rounded cursor-pointer pl-4 text-normal outline-none active:outline-none"/>
                         </div>
                     </div>
                     
@@ -301,7 +301,7 @@
                     <div class="flex w-full align-center justify-between">
                         <div class="md:w-[45%] sm:w-full flex flex-col justify-between">
                             <label class="font-bold font-Montserrat text-white mb-3">Convert to</label>
-                            <select id="to" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4">
+                            <select id="to" class="w-full h-[3.5rem] font-Montserrat font-bold text-normal rounded cursor-pointer pl-4 outline-none active:outline-none">
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
                                 <option value="GBP">GBP</option>
@@ -309,17 +309,15 @@
                             </select>
                         </div>
 
-                        <div class="md:w-[45%] sm:w-full flex flex-col justify-between">
-                            <label class="font-bold font-Montserrat text-white mb-3">The value of this <span id="valueOne"></span> to <span id="valueTwo"></span> is</label>
-                            <input type="text" id="result" class="w-full h-[3.5rem] font-Montserrat font-bold text-small rounded cursor-pointer pl-4"/>
+                        <div class="md:w-[45%] sm:w-full flex flex-col items-start justify-end h-full">
+                            <p id="result" class="font-bold text-mint font-Montserrat mb-3 text-medium"></p>
                         </div>
                         
                     </div>
                     
 
                     
-                    <button type="button" id="convert">Convert</button>
-                    <p ></p>
+                    <button type="button" id="convert"></button>
                 </form>
 
             </div>
