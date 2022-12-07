@@ -624,6 +624,10 @@ video {
   margin-left: 0.75rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .block {
   display: block;
 }
@@ -751,6 +755,14 @@ video {
 
 .w-\[30\%\] {
   width: 30%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-3\/6 {
+  width: 50%;
 }
 
 .transform {
@@ -938,6 +950,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1007,6 +1024,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-tight {
@@ -1096,6 +1117,11 @@ video {
   background-color: #ADEFD1FF;
 }
 
+.hover\:bg-sailorBlue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 32 63 / var(--tw-bg-opacity));
+}
+
 .hover\:text-sailorBlue:hover {
   --tw-text-opacity: 1;
   color: rgb(0 32 63 / var(--tw-text-opacity));
@@ -1135,29 +1161,19 @@ video {
 }
 
 @media (min-width: 200px) {
+  .sm\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .sm\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .sm\:my-6 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .sm\:my-20 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .sm\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .sm\:mt-\[1rem\] {
@@ -1228,6 +1244,14 @@ video {
     height: 100%;
   }
 
+  .sm\:h-\[90dvh\] {
+    height: 90dvh;
+  }
+
+  .sm\:h-\[100vh\] {
+    height: 100vh;
+  }
+
   .sm\:w-\[90\%\] {
     width: 90%;
   }
@@ -1246,6 +1270,10 @@ video {
 
   .sm\:w-\[30\%\] {
     width: 30%;
+  }
+
+  .sm\:w-\[22\%\] {
+    width: 22%;
   }
 
   .sm\:max-w-md {
@@ -1288,6 +1316,10 @@ video {
     gap: 3.5rem;
   }
 
+  .sm\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .sm\:p-6 {
     padding: 1.5rem;
   }
@@ -1314,6 +1346,11 @@ video {
   .sm\:py-3\.5 {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
+  }
+
+  .sm\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .sm\:text-left {
@@ -1452,6 +1489,14 @@ video {
     width: max-content;
   }
 
+  .md\:w-\[13\%\] {
+    width: 13%;
+  }
+
+  .md\:w-3\/6 {
+    width: 50%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1486,6 +1531,10 @@ video {
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:px-4 {

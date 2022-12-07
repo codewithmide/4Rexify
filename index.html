@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./src/images/title-icon.png" type="image/4rexify-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;800&family=Montserrat&family=Raleway+Dots&display=swap" rel="stylesheet">
@@ -74,20 +75,21 @@
 </style>
 
 <body class="bg-sailorBlue overflow-x-hidden">
-    <header class="w-full h-16 flex items-center justify-center shadow-lg bg-mint">
 
-        <nav class="lg:w-[90%] md:w-[90%] sm:w-[90%] flex items-center justify-between">
 
-            <div class="sm:w-[25%] lg:w-[11%] md:w-[15%] cursor-pointer">
+    <!-- DESKTOP AND MOBILE HEADER AND NAVBAR SECTION -->
+    <header class="w-full h-16 flex items-center justify-center bg-mint">
+
+        <nav class="w-[90%] flex items-center justify-between">
+            <div class="sm:w-[22%] lg:w-[11%] md:w-[13%] cursor-pointer">
                 <a href="index.html">
-                    <img src="./src/images/4Rexify_Footer.png" alt="logo" class="object-contain">
+                    <img src="./src/images/4Rexify_Footer.png" alt="logo">
                 </a>
             </div>
 
             <div class=" sm:hidden md:flex md:gap-3 lg:gap-6 items-center justify-center">
-
-                <ul class="md:flex items-center lg:gap-6 md:gap-3 text-sailorBlue font-Serif">
-                    <li class="hover:underline cursor-pointer focus:text-mint">
+                <ul class="flex items-center lg:gap-6 md:gap-3 text-sailorBlue font-Serif">
+                    <li class="hover:underline cursor-pointer">
                         <a href="#about" class="lg:text-normal md:text-small">
                             How it works?
                         </a>
@@ -108,17 +110,16 @@
                         </a>
                     </li>
                 </ul>
-
             </div>
 
             <div class="flex gap-4 md:flex sm:hidden">
                 <a href="./public/pages/login.html">
-                    <button type="button" class="font-Serif text-center focus:outline-none text-sailorBlue border-solid border-2 border-sailorBlue bg-none font-medium sm:hidden md:flex rounded-lg lg:px-6 lg:py-2.5 md:px-4 md:py-2 lg:text-normal md:text-small m-auto hover:bg-mint hover:text-sailorBlue hover:scale-95">
+                    <button type="button" class="font-Serif text-center focus:outline-none text-sailorBlue border-solid border-2 border-sailorBlue bg-none font-medium sm:hidden md:flex rounded-lg lg:px-6 lg:py-2.5 md:px-4 md:py-2 lg:text-normal md:text-small m-auto hover:bg-sailorBlue hover:text-mint hover:scale-95">
                         Login
                     </button>
                 </a>
                 <a href="./public/pages/signup.html">
-                    <button type="button" class="font-Serif text-center focus:outline-none text-white bg-sailorBlue border-solid border-2 border-sailorBlue focus:ring-2 focus:ring-white font-medium sm:hidden md:flex rounded-lg lg:px-6 lg:py-2.5 md:px-4 md:py-2 lg:text-normal md:text-small m-auto hover:scale-95">
+                    <button type="button" class="font-Serif text-center focus:outline-none text-mint bg-sailorBlue border-solid border-2 border-sailorBlue focus:ring-2 font-medium sm:hidden md:flex rounded-lg lg:px-6 lg:py-2.5 md:px-4 md:py-2 lg:text-normal md:text-small m-auto hover:bg-mint hover:text-sailorBlue hover:scale-95">
                         Sign up
                     </button>
                 </a>
@@ -127,10 +128,10 @@
             <div class="md:hidden mobile-action-menu mr-6">
                 <div class="mobile-action-menu">
                     <div class="menu">
-                      <img src="./src/images/icon-hamburger.svg" alt="icon-hamburger" />
+                        <i class="fa-solid fa-bars text-sailorBlue"></i>
                     </div>
                     <div class="close hidden">
-                      <img src="./src/images/icon-close-menu.svg" alt="icon-close-menu">
+                        <i class="fa-solid fa-xmark text-sailorBlue"></i>
                     </div>
                 </div>
             </div>
@@ -139,25 +140,27 @@
 
     </header>
 
-    <div class="w-screen h-[100%] absolute z-10 md:hidden flex flex-col items-start gap-10 mobile-nav-links sm:hidden bg-sailorBlue">
+    
+    <!-- MOBILE DEVICES HEADER AND NAVBAR -->
+    <div class="w-screen h-screen absolute z-10 md:hidden flex flex-col items-start gap-10 mobile-nav-links sm:hidden bg-sailorBlue">
         <div class="flex flex-col items-center ml-10 mt-20">
             <ul class="text-white font-Serif justify-between gap-2 flex flex-col">
-                <li class="hover:text-mint cursor-pointer focus:text-mint">
+                <li class="text-white">
                     <a href="#about">
                         How it works?
                     </a>
                 </li>
-                <li class="hover:text-mint cursor-pointer">
-                    <a href="#convert" class="lg:text-normal md:text-small">
+                <li class="text-white">
+                    <a href="#convert">
                         Get Started
                     </a>
                 </li>
-                <li class="hover:text-mint cursor-pointer">
+                <li class="text-white">
                     <a href="#blogs">
                         Blogs
                     </a>
                 </li>
-                <li class="hover:text-mint cursor-pointer">
+                <li class="text-white">
                     <a href="#contact">
                         Contact Us
                     </a>
@@ -167,22 +170,26 @@
 
         <div class="flex flex-col gap-4 ml-10">
             <a href="/public/pages/login.html">
-                <button type="button" class="font-Serif text-center focus:outline-none text-white border-solid border-2 bg-none font-medium rounded-lg px-4 py-2 hover:bg-mint hover:text-sailorBlue">
+                <button type="button" class="font-Serif text-center text-mint border-solid border-mint border-2 bg-none font-medium rounded-lg px-6 py-2">
                     Login
                 </button>
             </a>
             <a href="/public/pages/signup.html">
-                <button type="button" class="font-Serif text-center focus:outline-none text-sailorBlue bg-white focus:ring-2 focus:ring-white font-medium rounded-lg px-4 py-2">
+                <button type="button" class="font-Serif text-center text-sailorBlue bg-mint font-medium rounded-lg px-5 py-2">
                     Sign up
                 </button>
             </a>
         </div>
     </div>
 
-    <div class="xl:h-[90vh] md:h-[70vh] lg:h-[60vh] sm:h-[90vh] md:mt-[0rem] sm:mt-[1rem] lg:mt-[1rem] w-full p-0 m-0 flex flex-col items-center justify-center hero">
 
-        <div class="md:w-[90%] xxl:w-[80%] lg:w-[90%] sm:w-[90%] h-[90%] md:flex flex-col md:justify-center md:items-center lg:mt-[0rem] sm:mt-[0rem] md:mt-[0rem]">
-            <h1 class="font-Serif text-white font-bold xl:text-big md:text-semiBig sm:text-semiBig lg:w-full md:w-full md:text-center sm:text-left lg:text-center">
+
+    <!-- HERO SECTION -->
+    <div class="xl:h-[90vh] md:h-[70vh] lg:h-[60vh] sm:h-[90vh] w-full p-0 m-0 flex items-center justify-center hero">
+
+        <!-- CONTAINER -->
+        <div class="w-[90%] h-[90%] md:flex flex-col md:justify-center md:items-center">
+            <h1 class="font-Serif text-white font-bold xl:text-big md:text-semiBig sm:text-semiBig w-full md:text-center sm:text-left">
                 Foreign Exchange Rate
             </h1>
             <div class="lg:mb-[2rem] md:mb-[1rem]">
@@ -195,53 +202,55 @@
 
     </div>
 
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-sailorBlue bg-mint font-bold text-xs leading-tight uppercase rounded-full shadow-md transition duration-150 ease-in-out bottom-5 right-5 z-10" id="btn-back-to-top">
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-sailorBlue bg-mint font-bold text-xs leading-tight rounded-full shadow-md transition duration-150 ease-in-out bottom-5 right-5 z-10" id="btn-back-to-top">
         <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
         </svg>
     </button>
     
-    <div class="w-full xl:h-[100vh] md:h-[70vh] lg:h-[60vh] sm:mb-10 md:mb-0 flex items-center justify-center" id="about">
-        <div class="md:w-[90%] sm:w-[90%] md:h-[80%] lg:h-[90%] sm:h-[100%] flex flex-col gap-10">
 
-            <div class="flex h-[5%] items-start md:mb-0 sm:mb-10">
+    <!-- HOW TO USE 4REXIFY SECTION -->
+    <section class="w-full xl:h-[100vh] md:h-[70vh] lg:h-[60vh] sm:mb-6 md:mb-0 flex items-center justify-center" id="about">
+        <div class="w-[90%] md:h-[80%] lg:h-[90%] sm:h-[100%] flex flex-col sm:gap-6 md:gap-10">
 
+            <div class="flex h-[5%] items-start">
                 <h1 class="text-mint font-Serif font-bold text-big text-left w-full md:mt-0 sm:mt-10 md:mb-0 sm:mb-6 leading-none xl:text-big md:text-semiBig sm:text-semiBig">
                     How it works?
                 </h1>
-
             </div>
 
 
-            <div class="w-full h-[95%] flex md:flex-row sm:flex-col-reverse items-center justify-center">
+            <div class="w-full h-full flex md:flex-row sm:flex-col-reverse items-center justify-center">
                 <div class="md:w-1/2 sm:w-full h-full flex flex-col justify-center">
 
                     <div>
-                        <h2 class="font-normal font-Serif xl:text-medium md:text-medium sm:text-normal text-mint">
+                        <h2 class="font-bold font-Serif md:text-medium sm:text-normal text-mint">
                             Step One:
                         </h2>
-                        <p class="font-Montserrat text-white md:mb-3 sm:mb-6">
+                        <p class="font-Montserrat text-white md:mb-3 sm:mb-6 sm:text-small md:text-normal">
                             Select an initial currency
                         </p>
                         <div class="text-right md:mb-3 sm:mb-6">
-                            <h2 class="font-normal font-Serif xl:text-medium md:text-medium sm:text-normal text-mint">
+                            <h2 class="font-bold font-Serif xl:text-medium md:text-medium sm:text-normal text-mint">
                                 Step Two:
                             </h2>
-                            <p class="font-Montserrat text-white">
+                            <p class="font-Montserrat text-white sm:text-small md:text-normal">
                                 Enter your preffered value
                             </p>
                         </div>
-                        <h2 class="font-normal font-Serif xl:text-medium md:text-medium sm:text-normal text-mint">
+                        <h2 class="font-bold font-Serif xl:text-medium md:text-medium sm:text-normal text-mint">
                             Step Three:
                         </h2>
-                        <p class="font-Montserrat text-white md:mb-3 sm:mb-6">
+                        <p class="font-Montserrat text-white md:mb-3 sm:mb-6 sm:text-small md:text-normal">
                             Select the currency you wish to convert to
                         </p>
                         <div class="text-right md:mb-3 sm:mb-10">
-                            <h2 class="font-normal font-Serif xl:text-medium md:text-medium sm:text-normal text-mint">
+                            <h2 class="font-bold font-Serif xl:text-medium md:text-medium sm:text-normal text-mint">
                                 Step Four:
                             </h2>
-                            <p class="font-Montserrat text-white">
+                            <p class="font-Montserrat text-white sm:text-small md:text-normal">
                                 See the magic!
                             </p>
                         </div>
@@ -251,8 +260,8 @@
                     <div>
 
                         <a href="#convert">
-                            <button type="button" class="font-Montserrat font-bold text-center focus:outline-none text-sailorBlue bg-mint focus:ring-2 focus:ring-white font-medium rounded-lg md:px-7 md:py-3.5 sm:px-5 sm:py-3 hover:scale-105 mt-10 sm:mt-6">
-                                <p>Let's do this!</p>
+                            <button type="button" class="font-Serif text-center text-sailorBlue bg-mint font-medium sm:text-small md:text-normal rounded-lg md:px-7 md:py-3.5 sm:px-5 sm:py-3 hover:scale-95 mt-10 sm:mt-3">
+                                Let's do this!
                             </button>
                         </a>
 
@@ -263,16 +272,19 @@
 
                 <div class="md:w-1/2 sm:w-full h-full flex items-center justify-center">
                 
-                    <img src="./src/images/how.png" alt="currencies" class="w-4/6 h-full object-contain">
+                    <img src="./src/images/how.png" alt="currencies" class="md:w-3/6 h-full object-contain">
 
                 </div>
                 
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="convert" class="w-full lg:h-[100vh] md:h-[60vh] flex flex-col items-center justify-center sm:my-16 md:my-0">
-        <div class="lg:w-[90%] md:w-[90%] sm:w-[90%] flex h-[80%] flex-col">
+
+
+    <!-- CONVERTER SECTION -->
+    <section id="convert" class="w-full lg:h-[100vh] md:h-[60vh] flex flex-col items-center justify-center sm:my-12 md:my-0">
+        <div class="w-[90%] flex h-[80%] flex-col">
             <div class="w-full flex items-start  mb-6">
                 <h1 class="text-mint font-Serif font-bold xl:text-big md:text-semiBig sm:text-semiBig">
                     Make your conversion
@@ -644,9 +656,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="w-full sm:mb-10 flex items-center justify-center" id="blogs">
+
+    <!-- BLOG SECTION -->
+    <section class="w-full sm:mb-10 flex items-center justify-center" id="blogs">
 
         <div class="md:w-[90%] sm:w-[90%] md:h-[100%] sm:h-[100%] flex flex-col md:gap-8 sm:gap-0">
 
@@ -743,9 +757,12 @@
             </div>
             
         </div>
-    </div>
+    </section>
 
-    <div class="flex w-[100%] lg:h-[100vh] md:h-[50vh] sm:mb-20 md:mb-0 items-center justify-center md:mt-0 sm:mt-20" id="contact">
+
+
+    <!-- CONTACT SECTION -->
+    <section class="flex w-[100%] lg:h-[100vh] md:h-[50vh] sm:mb-20 md:mb-0 items-center justify-center md:mt-0 sm:mt-20" id="contact">
         <div class="lg:w-[90%] md:w-[90%] sm:w-[90%] h-[80%] flex flex-col">
             <div>
                 <h1 class="font-bold text-mint font-Serif xl:text-big md:text-semiBig sm:text-semiBig">
@@ -797,9 +814,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
     
+
+    <!-- FOOTER SECTION -->
     <footer class="p-4 bg-white md:inline-block sm:flex sm:flex-col font-Montserrat w-full sm:p-6">
         <div class="md:flex md:justify-between items-center">
             <div class="mb-6 md:mb-0 md:w-[10%] sm:w-[30%] h-[20%]">
@@ -872,6 +891,8 @@
         </div>
     </footer>
 
+
+    <!-- SCRIPTS -->
     <script src="/public/scripts/script.js"></script>
     <script src="/public/scripts/form.js"></script>
     <script src="/public/scripts/mobile.js"></script>
