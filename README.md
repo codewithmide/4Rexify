@@ -1,5 +1,4 @@
-# 4Rexify
+## 4Rexify
+## Foreign exchange made easier, much better, with a single click.
 
-ALX Portfolio project
-
-add more information about the way to run the app
+![4rexify OG image](src/images/og-image.png)
